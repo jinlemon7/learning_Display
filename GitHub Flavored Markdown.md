@@ -16,70 +16,6 @@
   
   <img width="1440" height="598" alt="image" src="https://github.com/user-attachments/assets/d72e6d15-0d30-421d-b9ab-baae56e88f25" />
 
-# 文本样式
-  您可以在注释字段和 .md 文件中使用粗体、斜体、删除线、下标或上标文本来表示强调。  
-
-  | 风格 | 句法 | 键盘快捷键 | 例子 | 输出 | Github适用性 | 
-  | --- | --- | --- | --- | --- | --- |
-  | 加粗 | ** ** 或者 __ __ | Ctrl + B （Windows/Linux）| \*\*这是粗体文本\*\* | **这是粗体文本** | |
-  | 斜体 | * * 或者 _ _ | Ctrl + I （Windows/Linux） | \_这段文字是斜体字\_ | _这段文字是斜体字_ | |
-  | 删除线 | ~~ ~~ or ~ ~ | | \~\~这是错误的文本\~\~ | ~~这是错误的文本~~ | 不适用 |
-  | 粗体和嵌套斜体 | ** ** 和 _ _ | | \*\*这段文字\_极其\_重要\*\* | **这段文字_极其_重要** | 不适用 |
-  | 全部粗体和斜体 | *** *** | | \*\*\*所有这些文字都很重要\*\*\* | ***所有这些文字都很重要*** | |
-  | 下标 | <sub> </sub> | | 这是\<sub> 下标\</sub>文本 |  这是<sub> 下标</sub>文本 | |
-  | 上标 | <sup> </sup> | | 这是\<sup>上标\</sup>文本 | 这是<sup>上标</sup>文本 | |
-  | 下划线 | <ins> </ins> | | 这是\<ins>下划线\</ins>文本 | 这是<ins>下划线</ins>文本 | 不适用 |
-
-# 引用文本
-  您可以使用 > 引用文本。  
-  ```
-  Text that is not a quote
-
-  > Text that is a quote
-  ```
-  引用的文本左侧用竖线缩进，并以灰色字体显示。  
-  
-  <img width="1440" height="227" alt="image" src="https://github.com/user-attachments/assets/fd11b041-841a-406a-b803-f17cb2f71f8e" />
-
-  查看对话时，您可以选中评论中的文本，然后输入 R 来自动引用该文本。您也可以点击 ，然后选择“引用回复” 来引用整个评论。
-
-# 引用代码
-  您可以使用单个反引号 (``) 在句子中引用代码或命令。反引号内的文本不会被格式化。  
-  您也可以按 Ctrl + E （Windows/Linux）快捷键，在 Markdown 行中插入代码块的反引号。
-  ```
-  Use `git status` to list all new or modified files that haven't yet been committed.
-  ```
-  <img width="1200" height="78" alt="image" src="https://github.com/user-attachments/assets/2b55631f-7d12-47f9-8a7f-bc5164a7f099" />
-
-  要将代码或文本格式化为单独的块，请使用三个反引号。  
-  ```
-    Some basic Git commands are:
-    ``` 
-    git status
-    git add
-    git commit
-    ```
-  ```
-  
-  <img width="1440" height="304" alt="image" src="https://github.com/user-attachments/assets/1d6e0759-bca9-49d7-8c19-7fb9fb93dd64" />
-
-# 支持的颜色模型
-  在问题、拉取请求和讨论中，您可以使用反引号在句子中指定颜色。反引号内支持的颜色模型将显示该颜色的可视化效果。  
-  ```
-  The background color is `#ffffff` for light mode and `#000000` for dark mode.
-  ```
-  <img width="1384" height="92" alt="image" src="https://github.com/user-attachments/assets/3616eccd-c62a-41a3-9f3b-4d85995eee7e" />
-
-  以下是目前支持的颜色模型。
-  | 颜色 | 句法 | 例子 | 输出 | 
-  | --- | --- | --- | --- |  
-  | HEX | \`#RRGGBB\` | \`#0969DA\` | <img width="136" height="38" alt="image" src="https://github.com/user-attachments/assets/8e238ffe-c411-4d6f-bb00-8b068449761a" />| 
-  | RGB | \`rgb(R,G,B)\` | \`rgb(9, 105, 218)\` | <img width="254" height="38" alt="image" src="https://github.com/user-attachments/assets/60956cdc-ae63-4a1f-a117-88d8018eeba6" /> | 
-  | HSL | \`hsl(H,S,L)\` | \`hsl(212, 92%, 45%)\` | <img width="280" height="38" alt="image" src="https://github.com/user-attachments/assets/7ecebeeb-0a80-4e52-8469-a9fc5997e41a" /> | 
-  
-  支持的颜色模型中，反引号内不能有任何前导空格或尾随空格。  
-  颜色可视化功能仅在问题、拉取请求和讨论中受支持。 在.md文件中不支持。
-
 # 链接
   您可以通过将链接文本用方括号 [ ] 包裹，然后将 URL 用圆括号 ( ) 包裹来创建内联链接。您也可以使用快捷键 Ctrl + K 创建链接。选中文本后，您可以从剪贴板粘贴 URL，即可自动从所选内容创建链接。
   您还可以通过选中文本并使用键盘快捷键 ctrl + V 来创建 Markdown 超链接。如果您想将文本替换为链接，请使用键盘快捷键 Ctrl + Shift + V 。
@@ -167,31 +103,6 @@
   ```
   自动标题链接的自动命名和编号行为不会考虑自定义锚点。
 
-# 换行符
-  如果你在代码仓库中编写问题、拉取请求或讨论，GitHub 会自动添加换行符：  
-  ```
-  This example
-  Will span two lines
-  ```
-  但是，如果您在 .md 文件中编写内容，上面的示例将显示在一行上，不会换行。要在 .md 文件中创建换行符，您需要添加以下代码之一：  
-  - 第一行末尾加两个空格。
-  - 在第一行末尾添加反斜杠。
-    ```
-    This example\
-    Will span two lines
-    ```
-  - 在第一行末尾添加一个 HTML 单行换行符标签。
-    ```
-    This example<br/>
-    Will span two lines
-    ```
-  如果在两行之间留一个空行，那么无论是 .md 文件还是 issue、pull request 和讨论中的 Markdown，都会将这两行渲染成由空行分隔开来：   
-  ```
-  This example
-  
-  Will have a blank line separating both lines
-  ```
-
 # 图片
   您可以通过添加 ! 并将 alt 文本用 [ ] 包裹来显示图像。alt 文本是图像信息的简短文本版本。然后，将图像链接用括号 () 包裹起来。  
   ```
@@ -218,6 +129,56 @@
   ```
   <img width="" height="" alt="" src="" />
   ```
+
+# 表格
+## 创建表  
+  可以使用竖线 | 和连字符 - 创建表。 连字符用于创建每列的标题，而竖线用于分隔每列。 必须在表格前包含空白链接，以便其正确呈现。  
+  ```
+  | First Header  | Second Header |
+  | ------------- | ------------- |
+  | Content Cell  | Content Cell  |
+  | Content Cell  | Content Cell  |
+  ```
+  <img width="1248" height="304" alt="image" src="https://github.com/user-attachments/assets/9f44adae-dfbe-4791-9a26-c74f73d067a8" />
+
+  表格末尾的竖线可选。  
+  单元格的宽度可以不同，无需在列内准确对齐。 标题行的第一列中必须至少有三个横线。  
+  ```
+  | Command | Description |
+  | --- | --- |
+  | git status | List all new or modified files |
+  | git diff | Show file differences that haven't been staged |
+  ```
+  <img width="1248" height="302" alt="image" src="https://github.com/user-attachments/assets/754f69c8-7122-4803-9418-f75a4c7e25dd" />
+
+  如果经常编辑代码片段和表，则可能受益于在 GitHub 上启用对所有注释字段采用固定宽度字体。  
+## 格式化表格中的内容
+  可以在表格中使用格式，例如链接、内联代码块和文本样式：  
+  ```
+  | Command | Description |
+  | --- | --- |
+  | `git status` | List all *new or modified* files |
+  | `git diff` | Show file differences that **haven't been** staged |
+  ```
+  <img width="1248" height="296" alt="image" src="https://github.com/user-attachments/assets/04583953-3496-4310-990f-9c167e0147b8" />
+
+  可以通过在标题行中连字符的左侧、右侧或两侧添加冒号 :，来靠左、靠右或居中对齐列中的文本。  
+  ```
+  | Left-aligned | Center-aligned | Right-aligned |
+  | :---         |     :---:      |          ---: |
+  | git status   | git status     | git status    |
+  | git diff     | git diff       | git diff      |
+  ```
+  <img width="1248" height="296" alt="image" src="https://github.com/user-attachments/assets/759d8a56-513c-4b1c-8a91-0da676b5362a" />
+
+  若要包含竖线 | 作为单元格中的内容，请在竖线前使用 \：  
+  ```
+  | Name     | Character |
+  | ---      | ---       |
+  | Backtick | `         |
+  | Pipe     | \|        |
+  ```
+  <img width="1248" height="302" alt="image" src="https://github.com/user-attachments/assets/22f54beb-7fa0-4577-95d6-676e818f1803" />
 
 # 列表
   您可以通过在一行或多行文本前面加上 - 、 * 或 + 来创建一个无序列表。
@@ -263,34 +224,30 @@
   如果任务列表项描述以括号开头，则需要使用 \ 对其进行转义：  
   `- [ ] \(Optional) Open a followup issu`
 
-# 提及人员和团队
-  GitHub 上，您可以通过输入 @ 加上用户名或团队名称来提及某人或团队 。这将触发通知，并引起他们的注意。如果您编辑评论并提及他们的用户名或团队名称，他们也会收到通知。  
-  只有当某人对存储库具有读取权限，并且如果存储库属于某个组织，则该人必须是该组织的成员时，才会通知该人有关提及的信息。  
-  `@github/support What do you think about these updates?` 
-  <img width="1440" height="79" alt="image" src="https://github.com/user-attachments/assets/2520837e-3fd8-4d34-9c1b-cae7c676e25d" />
-
-  当您提及父团队时，其子团队的成员也会收到通知，从而简化与多个群体之间的沟通。  
-  输入 @ 符号将显示项目成员或团队列表。列表会随着您的输入自动筛选，因此找到您要查找的成员或团队名称后，您可以使用方向键选中它，  
-  然后按 Tab 键或 Enter 键完成输入。对于团队，请输入 @组织/团队名称，该团队的所有成员都将订阅此对话。  
-  自动补全结果仅限仓库协作者和该讨论串中的其他参与者查看。
-
-# 引用问题和拉取请求
-  输入 # 即可调出仓库中建议的问题和拉取请求列表。  
-  输入问题或拉取请求的编号或标题来筛选列表，然后按 Tab 键或 Enter 键完成高亮显示的结果。  
-
-# 参考外部资源 
-  如果为代码库配置了自定义自动链接引用，则指向外部资源（例如 JIRA 问题或 Zendesk 工单）的引用将转换为短链接。要了解代码库中可用的自动链接，请联系具有代码库管理员权限的人员。
-
-# 上传资产
-  您可以通过拖放、从文件浏览器中选择或粘贴的方式上传图片等资源。  
-  您可以将资源上传到代码仓库中的问题、拉取请求、评论和 .md 文件。  
-
-# 使用表情符号 
-  您可以通过输入 `:EMOJICODE:` （冒号后跟表情符号的名称）来在文字中添加表情符号。  
-  `@octocat :+1: This PR looks great - it's ready to merge! :shipit:`   
-  <img width="1440" height="85" alt="image" src="https://github.com/user-attachments/assets/af1b416e-0a34-4891-a4ba-1b956c5deea7" />
-  输入 : 将显示建议的表情符号列表。列表会随着您的输入进行筛选，因此找到所需的表情符号后，请按 Tab 键或 Enter 键完成高亮显示的结果。  
-  有关可用表情符号和代码的完整列表，请参阅[表情符号速查表](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) 。  
+# 换行符
+  如果你在代码仓库中编写问题、拉取请求或讨论，GitHub 会自动添加换行符：  
+  ```
+  This example
+  Will span two lines
+  ```
+  但是，如果您在 .md 文件中编写内容，上面的示例将显示在一行上，不会换行。要在 .md 文件中创建换行符，您需要添加以下代码之一：  
+  - 第一行末尾加两个空格。
+  - 在第一行末尾添加反斜杠。
+    ```
+    This example\
+    Will span two lines
+    ```
+  - 在第一行末尾添加一个 HTML 单行换行符标签。
+    ```
+    This example<br/>
+    Will span two lines
+    ```
+  如果在两行之间留一个空行，那么无论是 .md 文件还是 issue、pull request 和讨论中的 Markdown，都会将这两行渲染成由空行分隔开来：   
+  ```
+  This example
+  
+  Will have a blank line separating both lines
+  ```
 
 # 段落
   您可以通过在文本行之间留空一行来创建新段落。
@@ -333,9 +290,168 @@
   ```
   <img width="1440" height="909" alt="image" src="https://github.com/user-attachments/assets/99c7ffcc-8f85-481d-a6f3-5e46a7097b9a" />
 
+# 文本样式
+  您可以在注释字段和 .md 文件中使用粗体、斜体、删除线、下标或上标文本来表示强调。  
+
+  | 风格 | 句法 | 键盘快捷键 | 例子 | 输出 | Github适用性 | 
+  | --- | --- | --- | --- | --- | --- |
+  | 加粗 | ** ** 或者 __ __ | Ctrl + B （Windows/Linux）| \*\*这是粗体文本\*\* | **这是粗体文本** | |
+  | 斜体 | * * 或者 _ _ | Ctrl + I （Windows/Linux） | \_这段文字是斜体字\_ | _这段文字是斜体字_ | |
+  | 删除线 | ~~ ~~ or ~ ~ | | \~\~这是错误的文本\~\~ | ~~这是错误的文本~~ | 不适用 |
+  | 粗体和嵌套斜体 | ** ** 和 _ _ | | \*\*这段文字\_极其\_重要\*\* | **这段文字_极其_重要** | 不适用 |
+  | 全部粗体和斜体 | *** *** | | \*\*\*所有这些文字都很重要\*\*\* | ***所有这些文字都很重要*** | |
+  | 下标 | <sub> </sub> | | 这是\<sub> 下标\</sub>文本 |  这是<sub> 下标</sub>文本 | |
+  | 上标 | <sup> </sup> | | 这是\<sup>上标\</sup>文本 | 这是<sup>上标</sup>文本 | |
+  | 下划线 | <ins> </ins> | | 这是\<ins>下划线\</ins>文本 | 这是<ins>下划线</ins>文本 | 不适用 |
+
+# 引用文本
+  您可以使用 > 引用文本。  
+  ```
+  Text that is not a quote
+
+  > Text that is a quote
+  ```
+  引用的文本左侧用竖线缩进，并以灰色字体显示。  
+  
+  <img width="1440" height="227" alt="image" src="https://github.com/user-attachments/assets/fd11b041-841a-406a-b803-f17cb2f71f8e" />
+
+  查看对话时，您可以选中评论中的文本，然后输入 R 来自动引用该文本。您也可以点击 ，然后选择“引用回复” 来引用整个评论。
+
+# 引用代码
+  您可以使用单个反引号 (``) 在句子中引用代码或命令。反引号内的文本不会被格式化。  
+  您也可以按 Ctrl + E （Windows/Linux）快捷键，在 Markdown 行中插入代码块的反引号。
+  ```
+  Use `git status` to list all new or modified files that haven't yet been committed.
+  ```
+  <img width="1200" height="78" alt="image" src="https://github.com/user-attachments/assets/2b55631f-7d12-47f9-8a7f-bc5164a7f099" />
+
+  要将代码或文本格式化为单独的块，请使用三个反引号。  
+  ```
+    Some basic Git commands are:
+    ``` 
+    git status
+    git add
+    git commit
+    ```
+  ```
+  
+  <img width="1440" height="304" alt="image" src="https://github.com/user-attachments/assets/1d6e0759-bca9-49d7-8c19-7fb9fb93dd64" />
+
+# 支持的颜色模型
+  在问题、拉取请求和讨论中，您可以使用反引号在句子中指定颜色。反引号内支持的颜色模型将显示该颜色的可视化效果。  
+  ```
+  The background color is `#ffffff` for light mode and `#000000` for dark mode.
+  ```
+  <img width="1384" height="92" alt="image" src="https://github.com/user-attachments/assets/3616eccd-c62a-41a3-9f3b-4d85995eee7e" />
+
+  以下是目前支持的颜色模型。
+  | 颜色 | 句法 | 例子 | 输出 | 
+  | --- | --- | --- | --- |  
+  | HEX | \`#RRGGBB\` | \`#0969DA\` | <img width="136" height="38" alt="image" src="https://github.com/user-attachments/assets/8e238ffe-c411-4d6f-bb00-8b068449761a" />| 
+  | RGB | \`rgb(R,G,B)\` | \`rgb(9, 105, 218)\` | <img width="254" height="38" alt="image" src="https://github.com/user-attachments/assets/60956cdc-ae63-4a1f-a117-88d8018eeba6" /> | 
+  | HSL | \`hsl(H,S,L)\` | \`hsl(212, 92%, 45%)\` | <img width="280" height="38" alt="image" src="https://github.com/user-attachments/assets/7ecebeeb-0a80-4e52-8469-a9fc5997e41a" /> | 
+  
+  支持的颜色模型中，反引号内不能有任何前导空格或尾随空格。  
+  颜色可视化功能仅在问题、拉取请求和讨论中受支持。 在.md文件中不支持。
+
+# 创建和突显代码块
+## 隔离代码块
+  通过在代码块的前后输入三反引号 ```，可创建围栏代码块。 我们建议在代码块的前后各留一个空白行，使原始格式更易辨读。  
+  ```
+  function test() {
+    console.log("notice the blank line before this function?");
+  }
+  ```
+  <img width="1440" height="191" alt="image" src="https://github.com/user-attachments/assets/83199e3c-e433-486b-af17-86b82a44d768" />
+
+  要在列表中保留格式，请确保将非围栏代码块缩进八个空格。  
+
+  要在围栏代码块中显示三重倒引号，请将其包在四个倒引号内。  
+  ````
+  ```
+  Look! You can see my backticks.
+  ```
+  ````
+  <img width="1440" height="233" alt="image" src="https://github.com/user-attachments/assets/1976f222-c091-4af1-b72c-e3f162f58508" />
+
+## 语法突出显示
+  您可以添加可选的语言标识符，以在围栏代码块中启用语法突显。  
+  语法突出显示功能会更改源代码的颜色和样式，使其更易于阅读。  
+
+  例如，要语法突显 Ruby 代码：  
+  ````
+  ```ruby
+  require 'redcarpet'
+  markdown = Redcarpet.new("Hello World!")
+  puts markdown.to_html
+  ```
+  ````
+  <img width="1440" height="239" alt="image" src="https://github.com/user-attachments/assets/9571f4a4-e9cb-4f29-8a7e-9a1320d483b1" />
+
+  当你创建一个围栏代码块并且还希望在 GitHub Pages 网站上突出显示语法时，请使用小写的语言标识符。   
+
+  Github使用 [Linguist](https://github.com/github-linguist/linguist) 执行语言检测，并选择[第三方语法](https://github.com/github-linguist/linguist/blob/main/vendor/README.md) 
+  以强调语法。 你可以在[语言 YAML 文件](https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml)中找出哪些关键字有效。
+  
+# 使用表情符号 
+  您可以通过输入 `:EMOJICODE:` （冒号后跟表情符号的名称）来在文字中添加表情符号。  
+  `@octocat :+1: This PR looks great - it's ready to merge! :shipit:`   
+  <img width="1440" height="85" alt="image" src="https://github.com/user-attachments/assets/af1b416e-0a34-4891-a4ba-1b956c5deea7" />
+  输入 : 将显示建议的表情符号列表。列表会随着您的输入进行筛选，因此找到所需的表情符号后，请按 Tab 键或 Enter 键完成高亮显示的结果。  
+  有关可用表情符号和代码的完整列表，请参阅[表情符号速查表](https://github.com/ikatyang/emoji-cheat-sheet/blob/github-actions-auto-update/README.md) 。  
+
+# 使用折叠部分组织信息
+  可以通过创建读者可以选择展开的折叠部分来暂时隐藏 Markdown 的分区。 例如，当想在问题评论中包含可能不是每个读者都相关或感兴趣的技术细节时，可以将这些细节放在折叠部分中。    
+  `<details>` 块中的任何 Markdown 都将被折叠，直到读者单击  展开详细信息。  
+  在 `<details>` 块中，使用 `<summary>` 标记让读者知道里面的内容。 标签显示在  的右侧。  
+  ```
+    <details>
+  
+    <summary>Tips for collapsed sections</summary>
+    
+    ### You can add a header
+    
+    You can add text within a collapsed section.
+    
+    You can add an image or a code block, too.
+    
+    ```ruby
+       puts "Hello World"
+    ```
+    
+    </details>
+  ```
+  默认情况下，<summary> 标签中的 Markdown 将被折叠：  
+  <img width="1440" height="72" alt="image" src="https://github.com/user-attachments/assets/122d2ec4-4f4c-45d9-9827-a4133301b3b0" />
+  
+  读者单击  后，将展开详细信息：  
+  <img width="1440" height="603" alt="image" src="https://github.com/user-attachments/assets/4b7fa6f1-031d-460e-941b-081ee55b5370" />
+
+  若要使该部分在默认情况下显示为打开状态，请将 open 属性添加到 `<details>` 标签：  
+  `<details open>`
+  
 # 隐藏带评论的内容
   你可以通过将内容放在 HTML 注释中，告诉 GitHub 从渲染的 Markdown 中隐藏该内容。  
   `<!-- This content will not appear in the rendered Markdown -->`  
+
+# 上传资产
+  您可以通过拖放、从文件浏览器中选择或粘贴的方式上传图片等资源。  
+  您可以将资源上传到代码仓库中的问题、拉取请求、评论和 .md 文件。
+
+# 提及人员和团队
+  GitHub 上，您可以通过输入 @ 加上用户名或团队名称来提及某人或团队 。这将触发通知，并引起他们的注意。如果您编辑评论并提及他们的用户名或团队名称，他们也会收到通知。  
+  只有当某人对存储库具有读取权限，并且如果存储库属于某个组织，则该人必须是该组织的成员时，才会通知该人有关提及的信息。  
+  `@github/support What do you think about these updates?` 
+  <img width="1440" height="79" alt="image" src="https://github.com/user-attachments/assets/2520837e-3fd8-4d34-9c1b-cae7c676e25d" />
+
+  当您提及父团队时，其子团队的成员也会收到通知，从而简化与多个群体之间的沟通。  
+  输入 @ 符号将显示项目成员或团队列表。列表会随着您的输入自动筛选，因此找到您要查找的成员或团队名称后，您可以使用方向键选中它，  
+  然后按 Tab 键或 Enter 键完成输入。对于团队，请输入 @组织/团队名称，该团队的所有成员都将订阅此对话。  
+  自动补全结果仅限仓库协作者和该讨论串中的其他参与者查看。
+
+# 引用问题和拉取请求
+  输入 # 即可调出仓库中建议的问题和拉取请求列表。  
+  输入问题或拉取请求的编号或标题来筛选列表，然后按 Tab 键或 Enter 键完成高亮显示的结果。  
 
 # 忽略Markdown格式
   你可以通过在 Markdown 字符前使用 \ 来告诉 GitHub 忽略（或转义）Markdown 格式。  
@@ -348,17 +464,5 @@
   查看 Markdown 文件时，您可以点击文件顶部的 “代码”按钮来禁用 Markdown 渲染，并改为查看文件的源代码。  
   禁用 Markdown 渲染后，您可以使用源代码视图功能，例如行链接，而查看已渲染的 Markdown 文件时无法使用这些功能。  
 
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
+# 参考外部资源 
+  如果为代码库配置了自定义自动链接引用，则指向外部资源（例如 JIRA 问题或 Zendesk 工单）的引用将转换为短链接。要了解代码库中可用的自动链接，请联系具有代码库管理员权限的人员。 
