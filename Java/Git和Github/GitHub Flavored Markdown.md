@@ -119,15 +119,20 @@
   | 在同一分支上的 .md 文件中 | /assets/images/electrocat.png |  
   | 在另一个分支的 .md 文件中 | /../main/assets/images/electrocat.png |  
   | 在仓库的 issue、pull request 和评论中 | ../blob/main/assets/images/electrocat.png?raw=true |  
-  | 在另一个存储库的 .md 文件中 | /../../../../github/docs/blob/main/assets/images/electrocat.png |  
-  | 在另一个仓库的问题、拉取请求和评论中 | ../../../github/docs/blob/main/assets/images/electrocat.png?raw=true |  
-  
   上表中的最后两个相对链接仅适用于查看者至少拥有对包含这些图像的私有存储库的读取权限的私有存储库中的图像。
 
 # 图片元素
   支持 <picture> HTML 元素。
   ```
   <img width="" height="" alt="" src="" />
+  ```
+  ```
+  <picture>
+  #示例使用的是相对链接
+   <source media="(prefers-color-scheme: dark)" srcset="贴图-防失效/benti-convert.png">
+   <source media="(prefers-color-scheme: light)" srcset="贴图-防失效/benti.png">
+   <img alt="受支持头像" src="贴图-防失效/benti.png">
+  </picture>
   ```
 
 # 表格
