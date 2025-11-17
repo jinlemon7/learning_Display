@@ -1,0 +1,31 @@
+# 什么是 GitHub Codespaces？
+  代码空间是托管在云中的开发环境。   
+  可通过将配置文件提交到存储库（通常称为“配置即代码”）来为 GitHub Codespaces 自定义项目，这将为项目的所有用户创建可重复的 codespace 配置。 请参阅 [开发容器简介](https://docs.github.com/zh/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)。  
+
+  创建的每个 codespace 都由 GitHub 托管在虚拟机上运行的 Docker 容器中。   
+  可以从多种虚拟机类型中选择，从 2 核、8 GB RAM 和 32 GB 存储，到最多 32 核、128 GB RAM 和 128 GB 存储。  
+
+  默认情况下，codespace 开发环境是基于 Ubuntu Linux 映像创建的，该映像包含各种常用的语言和工具，但也可以使用基于所选 Linux 发行版的映像，并根据你的特定要求对其进行配置。  
+  0无论本地操作系统是什么，codespace 都将在 Linux 环境中运行。 远程开发容器不支持 Windows 和 macOS 操作系统。  
+
+  可以从浏览器、Visual Studio Code 或使用 GitHub CLI 连接到 codespace。   
+  连接时，你将位于 Docker 容器中。 对于外部 Linux 虚拟主机，你只有有限的访问权限。  
+  <img width="1440" height="1030" alt="image" src="https://github.com/user-attachments/assets/1154556f-f4cb-433c-ad9d-2a8f6c0c4406" />
+
+# 使用 GitHub Codespaces
+  要开始使用基于云的计算资源进行开发，可以通过模板或存储库中的任何分支或提交创建 codespace。  
+  通过模板创建 codespace 时，可以从空白模板开始，也可以选择适合你正在做的工作的模板。  
+
+
+# 自定义 GitHub Codespaces
+  若要自定义 codespace 中的运行时和工具，可以为存储库创建一个或多个开发容器配置。   
+  将开发容器配置添加到存储库后，可以定义适合用户将在存储库中执行的工作的不同开发环境选择。  
+  
+  如果通过没有任何开发容器配置的仓库创建 codespace，GitHub Codespaces 会将仓库克隆到具有默认开发容器映像的环境中，  
+  该映像包含许多工具、语言和运行时环境。 如果通过模板创建 codespace，则可以从默认映像之上的一些初始配置开始。  
+  请参阅 [开发容器简介](https://docs.github.com/zh/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)。  
+
+  可使用公共[点文件](https://dotfiles.github.io/tutorials/)存储库对 codespace 环境的各个方面进行个性化设置。 可使用点文件设置 shell 别名和首选项，也可安装喜欢使用的工具的个人首选项。   
+  如果在浏览器或 Visual Studio Code 中使用 GitHub Codespaces，则可以使用[设置同步](https://code.visualstudio.com/docs/editor/settings-sync)为 codespace 编辑器提供在本地安装 Visual Studio Code 中设置的相同设置、键盘快捷方式、片段和扩展。  
+
+  请参阅 [自定义代码空间](https://docs.github.com/zh/codespaces/customizing-your-codespace)。
