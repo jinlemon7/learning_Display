@@ -37,15 +37,14 @@
        b. 在 codespace 选项页上，从下拉菜单中选择首选选项
          <img width="1440" height="1001" alt="image" src="https://github.com/user-attachments/assets/26838a0f-e295-4fa0-b875-213c31ccfd2e" />
 
-       > [!NOTE]  
-       > - 可以为选项页添加书签，以便快速创建此存储库和分支的 codespace。  
-       > - [https://github.com/codespaces/new](https://github.com/codespaces/new) 页提供了为任何存储库和分支创建 codespace 的快速方法。  
-       >   可以通过在浏览器的地址栏中输入 `codespace.new` 来快速访问此页面。  
-       > - 有关计算机类型的详细信息，请参阅 [更改代码空间的计算机类型](https://docs.github.com/zh/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace#about-machine-types)。  
-       > - 你选择的可用计算机类型可能会受到多种因素的限制。 其中可能包括为组织配置的策略，或者存储库的计算机类型最低规范  
-       >   有关详细信息，请参阅 [限制对计算机类型的访问](https://docs.github.com/zh/codespaces/managing-codespaces-for-your-organization/restricting-access-to-machine-types) 和 [为代码空间计算机设置最低规范](https://docs.github.com/zh/codespaces/setting-up-your-project-for-codespaces/configuring-dev-containers/setting-a-minimum-specification-for-codespace-machines)。  
-
-       c. 单击“创建 codespace”。
+  > [!NOTE]
+  > - 可以为选项页添加书签，以便快速创建此存储库和分支的 codespace。  
+  > - [https://github.com/codespaces/new](https://github.com/codespaces/new) 页提供了为任何存储库和分支创建 codespace 的快速方法。  
+  >   可以通过在浏览器的地址栏中输入 `codespace.new` 来快速访问此页面。  
+  > - 有关计算机类型的详细信息，请参阅 [更改代码空间的计算机类型](https://docs.github.com/zh/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace#about-machine-types)。  
+  > - 你选择的可用计算机类型可能会受到多种因素的限制。 其中可能包括为组织配置的策略，或者存储库的计算机类型最低规范  
+  >   有关详细信息，请参阅 [限制对计算机类型的访问](https://docs.github.com/zh/codespaces/managing-codespaces-for-your-organization/restricting-access-to-machine-types)
+  >   和 [为代码空间计算机设置最低规范](https://docs.github.com/zh/codespaces/setting-up-your-project-for-codespaces/configuring-dev-containers/setting-a-minimum-specification-for-codespace-machines)
 
 # 建议的机密
   创建 codespace 时，用户定义机密的名称可能会显示在高级选项页上。   
