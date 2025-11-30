@@ -123,10 +123,10 @@
 
 # 图片元素
   支持 <picture> HTML 元素。
-  ```
+  ```html
   <img width="" height="" alt="" src="" />
   ```
-  ```
+  ```html
   <picture>
   #示例使用的是相对链接
    <source media="(prefers-color-scheme: dark)" srcset="贴图-防失效/benti-convert.png">
@@ -331,7 +331,7 @@
   <img width="1200" height="78" alt="image" src="https://github.com/user-attachments/assets/2b55631f-7d12-47f9-8a7f-bc5164a7f099" />
 
   要将代码或文本格式化为单独的块，请使用三个反引号。  
-  ```
+  ```shell
     Some basic Git commands are:
     ``` 
     git status
