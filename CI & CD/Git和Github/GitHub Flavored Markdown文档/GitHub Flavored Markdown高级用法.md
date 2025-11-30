@@ -262,15 +262,18 @@
   视频编解码器兼容性因浏览器而异，上传到一个浏览器的视频可能无法在另一个浏览器上查看。 目前，我们建议使用 H.264 实现最大兼容性。  
 ## 其他文件类型
   仓库的议题注释、拉取请求注释以及讨论注释中支持上传以下文件类型。 组织讨论中也支持此文件类型列表。  
+  
 ### 文档
   - PDF (.pdf)  
   - Microsoft Office 文档（.docx、.pptx、.xlsx、.xls、.xlsm）  
   - OpenDocument 格式（.odt、.fodt、.ods、.fods、.odp、.fodp、.odg、.fodg、.odf）
   - 富文本和文字处理文件（.rtf、.doc）
+    
 ### 文本和数据文件
   - 纯文本和标记（.txt、.md、.copilotmd）
   - 数据和表格文件（.csv、 .tsv、 .log、.json、.jsonc）
-###　开发和代码文件
+
+### 开发和代码文件
   - C 文件 (.c)  
   - C# 文件 (.cs)
   - C++ 文件 (.cpp)
@@ -292,13 +295,17 @@
   - XML 文件 (.xml)
   - YAML 文件（.yaml、.yml）
 
-  如果使用 Linux 并尝试上传 .patch 文件，则将收到错误消息。 这是一个已知问题。  
+  如果使用 Linux 并尝试上传 .patch 文件，则将收到错误消息。 这是一个已知问题。    
+  
 ### 存档和压缩文件
   - 存档和包（.zip、.gz、.tgz）
-###　通信和日志
-　- 文本和电子邮件文件（.debug、.msg、.eml）
+    
+### 通信和日志
+　- 文本和电子邮件文件（.debug、.msg、.eml）  
+ 
 ### 映像
   - 位图与 TIFF 图像（.bmp、.tif、.tiff）
+    
 ### 音频
   - 音频文件（.mp3、.wav）
 
