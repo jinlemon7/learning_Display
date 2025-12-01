@@ -18,13 +18,22 @@
 
 # 链接
   您可以通过将链接文本用方括号 [ ] 包裹，然后将 URL 用圆括号 ( ) 包裹来创建内联链接。您也可以使用快捷键 Ctrl + K 创建链接。选中文本后，您可以从剪贴板粘贴 URL，即可自动从所选内容创建链接。
-  您还可以通过选中文本并使用键盘快捷键 ctrl + V 来创建 Markdown 超链接。如果您想将文本替换为链接，请使用键盘快捷键 Ctrl + Shift + V 。
+  您还可以通过选中文本并使用键盘快捷键 `ctrl + V` 来创建 Markdown 超链接。如果您想将文本替换为链接，请使用键盘快捷键 `Ctrl + Shift + V `。
   ```
   This site was built using [GitHub Pages](https://pages.github.com/).
   ```
   <img width="1408" height="84" alt="image" src="https://github.com/user-attachments/assets/04afda5d-42ab-4e81-888d-f67a45fe2987" />
 
   当评论中输入有效的 URL 时，GitHub 会自动创建链接。
+
+# Github徽章
+  使用svg图形作为链接地址的载体，替换掉普通文本载体。  
+  ```makedown
+  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](URL)
+  ```
+  外层的[]()是链接的标记形式，内层的![]()是图片的标记形式。  
+  效果:  
+  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](URL)  
 
 # 章节连接
   您可以直接链接到任何带有标题的章节。要查看渲染文件中自动生成的链接（锚点），请将鼠标悬停在章节标题上以显示图标，然后单击该图标即可在浏览器中显示链接。  
