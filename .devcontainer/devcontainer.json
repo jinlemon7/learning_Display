@@ -37,7 +37,8 @@
 			"bierner.markdown-yaml-preamble",
 			//此部分为java-general扩展
 			"streetsidesoftware.code-spell-checker",
-			"vscjava.vscode-java-pack"
+			"vscjava.vscode-java-pack",
+			"DavidAnson.vscode-markdownlint"
 			]
 		}
 	}
