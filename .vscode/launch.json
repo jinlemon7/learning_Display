@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ChatClient",
+            "request": "launch",
+            "mainClass": "ChatClient",
+            "projectName": "learning_Display_5edc4e63"
+        },
+        {
+            "type": "java",
             "name": "SchedulerClient",
             "request": "launch",
             "mainClass": "SchedulerClient",
