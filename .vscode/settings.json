@@ -1,6 +1,4 @@
 {
-    "java.project.sourcePaths": [
-        "Java/Java高阶/01. 23种设计模式/03.行为型模式/05.备忘录模式-代码实战"
-    ],
+    "java.project.sourcePaths": [],
     "java.project.referencedLibraries": []
 }
