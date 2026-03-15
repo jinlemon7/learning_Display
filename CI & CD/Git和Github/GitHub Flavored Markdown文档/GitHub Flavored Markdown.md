@@ -24,16 +24,21 @@
   ```
   <img width="1408" height="84" alt="image" src="https://github.com/user-attachments/assets/04afda5d-42ab-4e81-888d-f67a45fe2987" />
 
-  当评论中输入有效的 URL 时，GitHub 会自动创建链接。
+  当评论中输入有效的 URL 时，GitHub 会自动创建链接。  
 
-# Github徽章
-  使用svg图形作为链接地址的载体，替换掉普通文本载体。  
-  ```makedown
-  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](URL)
+# 相对链接
+  您可以在渲染的文件中定义相对链接和图像路径，以帮助读者导航到存储库中的其他文件。  
+  相对链接是指相对于当前文件的链接。例如，如果你的仓库根目录下有一个 README 文件，而 docs/CONTRIBUTING.md 目录下还有一个文件，那么 README 文件中指向 CONTRIBUTING.md 的相对链接可能如下所示：  
   ```
-  外层的[]()是链接的标记形式，内层的![]()是图片的标记形式。  
-  效果:  
-  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](URL)  
+  [Contribution guidelines for this project](docs/CONTRIBUTING.md)
+  ```
+  GitHub 会根据你当前所在的分支自动转换相对链接或图片路径，以确保链接或路径始终有效。链接路径将相对于当前文件。以 / 开头的链接将相对于仓库根目录。你可以使用所有相对链接操作符，例如 ./ 和 ../ 。  
+  链接文本应该写在一行上。下面的示例将无法正常工作:  
+  ```
+  [Contribution
+  guidelines for this project](docs/CONTRIBUTING.md)
+  ```
+  对于克隆您仓库的用户来说，相对链接更方便。绝对链接在克隆的仓库中可能无法正常工作——我们建议使用相对链接来引用仓库内的其他文件。  
 
 # 章节连接
   您可以直接链接到任何带有标题的章节。要查看渲染文件中自动生成的链接（锚点），请将鼠标悬停在章节标题上以显示图标，然后单击该图标即可在浏览器中显示链接。  
@@ -78,20 +83,6 @@
   ```
   如果您编辑标题，或者更改具有“相同”锚点的标题的顺序，则还需要更新指向这些标题的任何链接，因为锚点会发生变化。  
 
-# 相对链接
-  您可以在渲染的文件中定义相对链接和图像路径，以帮助读者导航到存储库中的其他文件。  
-  相对链接是指相对于当前文件的链接。例如，如果你的仓库根目录下有一个 README 文件，而 docs/CONTRIBUTING.md 目录下还有一个文件，那么 README 文件中指向 CONTRIBUTING.md 的相对链接可能如下所示：  
-  ```
-  [Contribution guidelines for this project](docs/CONTRIBUTING.md)
-  ```
-  GitHub 会根据你当前所在的分支自动转换相对链接或图片路径，以确保链接或路径始终有效。链接路径将相对于当前文件。以 / 开头的链接将相对于仓库根目录。你可以使用所有相对链接操作符，例如 ./ 和 ../ 。  
-  链接文本应该写在一行上。下面的示例将无法正常工作。  
-  ```
-  [Contribution
-  guidelines for this project](docs/CONTRIBUTING.md)
-  ```
-  对于克隆您仓库的用户来说，相对链接更方便。绝对链接在克隆的仓库中可能无法正常工作——我们建议使用相对链接来引用仓库内的其他文件。
-
 # 自定义锚点
   您可以使用标准的 HTML 锚点标签（ `<a name="unique-anchor-name"></a>` ）为文档中的任何位置创建导航锚点。为避免歧义，请为锚点标签使用唯一的命名方案，例如在 name 属性值前添加前缀。  
   自定义锚点将不会包含在文档大纲/目录中。  
@@ -110,7 +101,16 @@
   
   [A link to that custom anchor](#my-custom-anchor-point)
   ```
-  自动标题链接的自动命名和编号行为不会考虑自定义锚点。
+  自动标题链接的自动命名和编号行为不会考虑自定义锚点。  
+
+# Github徽章
+  使用svg图形作为链接地址的载体，替换掉普通文本载体。  
+  ```makedown
+  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](URL)
+  ```
+  外层的[]()是链接的标记形式，内层的![]()是图片的标记形式。  
+  效果:  
+  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](URL)  
 
 # 图片
   您可以通过添加 ! 并将 alt 文本用 [ ] 包裹来显示图像。alt 文本是图像信息的简短文本版本。然后，将图像链接用括号 () 包裹起来。  
